@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="Website Icon" type="png" href="—Pngtree—vector new moon icon_4195703.png">
+  <title>Algi's Fortofolio</title>
+</head>
+<body>
+  <nav>
+    <div class="nama">
+      <p style="color: white;">Algi's Fortofolio</p>
+    </div>
+    <div class="navigasi-link">
+      <ul>
+      <li><a href="#isi1">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    </div>
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section id="isi1">
+    <h1 class="yokozo">Selamat Datang Di Website Saya</h1>
+    <div class="gambar">
+      <img src="blue-aesthetic-moon-df8850p673zj275y.jpg" alt="">
+    </div>
+  </section>
+  <section id="about">
+    <div class="kelompok-nama">
+      <p style="color: burlywood;">Hello, Welcome</p>
+      <h1>I'M Muhammad Algifari Salam</h1>
+      <h4 class="perkenalan"><b>Saya Adalah Seorang Siswa dari SMKN 1 Majalengka.Seseorang yang bercita cita menjadi FrontEnd Developer.Saya Sekarang kelas X PPLG 1.</b></h4>
+    </div>
+    <!-- <img src="Screenshot_20240729-214501-removebg-preview.png" alt=""> -->
+  </section>
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <form action="mailto:algi20097@gmail.com" method="get">
+      <input name="subject" placeholder="masukan nama..." class="nama1"/>
+      <input name="body" placeholder="masukan pesan..." class="pesan"/>
+      <input type="submit" class="tombol">
+    </form>
+  </section>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('slide');
+    });
+
+    let docTitle = document.title;
+    window.addEventListener("blur", () =>{
+      document.title = "BALIK LAGI DONGS";
+    })
+    window.addEventListener("focus", () => {
+      document.title = docTitle;
+    })
+    </script>
+</body>
+</html>
+  
